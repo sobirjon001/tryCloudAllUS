@@ -1,4 +1,4 @@
-package com.cybertek.utilities;
+package com.trycloud.utilities;
 
 public interface BrowserUtils {
 
