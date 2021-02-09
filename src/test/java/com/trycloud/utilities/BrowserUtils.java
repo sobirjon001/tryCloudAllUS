@@ -2,7 +2,7 @@ package com.trycloud.utilities;
 
 public interface BrowserUtils {
 
-  static void sleep(int seconds){
+  default void sleep(int seconds){
     seconds *= 1000;
     try {
       Thread.sleep(seconds);

@@ -22,16 +22,19 @@ public class Driver {
           WebDriverManager.chromedriver().setup();
           driver = new ChromeDriver();
           driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+          driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
           break;
         case "firefox":
           WebDriverManager.firefoxdriver().setup();
           driver = new FirefoxDriver();
           driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+          driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
           break;
         default:
           WebDriverManager.chromedriver().setup();
           driver = new ChromeDriver();
           driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+          driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
           break;
       }
     }
